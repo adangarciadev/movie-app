@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.profile {
+  margin-top: 50px;
+}
+
+.home-bg {
+  position: relative;
+  min-height: 100;
+  min-width: 100%;
+  background: url('../../images/monstruos.jpg');
+  top: 0;
+  left: 0;
+  background-repeat: repeat;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.movie--container {
+  width: 100%;
+  /* max-width: 1400px; */
+  margin: 40px auto 100px auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 35px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+/* .image-home {
+  background-image: url('../../images/cine.jpg');
+} */
+
+.title {
+  color: #ffffff;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.color-age {
+  position: relative;
+  text-align: center;
+  background-color: purple;
+  font-size: 15px;
+  color: white;
+  /* height: 5%;
+  width: 15%; */
+  border-radius: 15px;
+}
+
+.movie--poster {
+  border-radius: 15px;
+  width: 250px;
+}
+
+.page-link {
+  margin-bottom: 10px;
+}
+
+.movie--container .image-container {
+  text-align: center;
+}
+
+.movie--container .image-container .title {
+  font-size: 18px;
+  font-weight: 600;
+  /* display: block; */
+}
+
+.movie--container .image-container .movie--poster {
+  width: 100%;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+  object-fit: cover;
+}
+
+.image-container {
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px black;
+  padding: 1rem;
+  padding-bottom: 20px;
+  min-width: 300px;
+  text-align: center;
+  background-color: black;
+}
+
+.movie--poster:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #0400ff;
+}
+
+.movie--poster:hover {
+  color: #271a3f;
+  box-shadow: 0 0 20px #080ceb;
+  /* text-shadow: 0 0 10px #081561; */
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}

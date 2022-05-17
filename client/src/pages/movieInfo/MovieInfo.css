@@ -1,0 +1,111 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.35s linear;
+}
+
+.bo {
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.container-info {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 480px 1fr;
+  grid-gap: 32px;
+  backdrop-filter: blur(12px) contrast(80%);
+  color: white;
+  background-size: cover;
+  position: absolute;
+}
+
+span {
+  color: gold;
+}
+
+.vote {
+  color: gold;
+  background-color: black;
+}
+
+.info {
+  padding-top: 24px;
+  padding-left: 24px;
+}
+
+.poster {
+  width: 500px;
+  height: 100vh;
+  object-fit: cover;
+  overflow: hidden;
+  margin-top: 60px;
+}
+
+.poster img:hover {
+  transform: scale(1.35) rotateZ(5deg);
+}
+
+.info > div {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 32px;
+}
+
+.movie-title {
+  font-size: 64px;
+  font-weight: bold;
+  background-image: linear-gradient(45deg, #00ffff, #00ff00);
+  background-clip: text;
+  color: transparent;
+}
+
+.movie-detail .set {
+  display: inline-block;
+  margin-right: 64px;
+}
+
+.movie-detail label {
+  font-size: 14px;
+  color: #ededed;
+  display: block;
+}
+
+.movie-detail span {
+  font-size: 22px;
+}
+
+.movie-description {
+  line-height: 24px;
+  text-align: justify;
+}
+
+.header {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.cast {
+  height: 350px;
+  border: 4px solid rgb(250, 250, 250);
+  display: flex;
+  padding: 15px;
+  gap: 10px;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.photo {
+  width: 250px;
+  text-align: center;
+  margin-right: 10px;
+  height: 150px;
+}
+
+.pro {
+  width: 90%;
+}
